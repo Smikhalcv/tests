@@ -1,6 +1,7 @@
 import unittest
 import Function
 from unittest.mock import patch
+from copy import deepcopy
 
 
 # Следует протестировать основные функции по получению информации о документах,
@@ -8,7 +9,7 @@ from unittest.mock import patch
 
 class Test_Function(unittest.TestCase):
     def setUp(self):
-        self.dirs, self.docs = Function.directories, Function.documents
+        self.dirs, self.docs = deepcopy(Function.directories), deepcopy(Function.documents)
 
     def test_list_doc(self):
         Function.list_doc_on_directories(self.dirs)
