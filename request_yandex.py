@@ -17,3 +17,4 @@ def translat(text, tran_f, tran_t):
 
 if __name__ in '__main__':
     pass
+
