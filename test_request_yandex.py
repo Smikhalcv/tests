@@ -9,7 +9,6 @@ class Tests_translator(unittest.TestCase):
     '''Тестирует файл с яндекс переводом'''
 
     def setUp(self) -> None:
-        #
         self.data = request_yandex.translat('Привет', 'ru', 'en')
 
     def test_status(self):
